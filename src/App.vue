@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-	<h1>TEST 01</h1>
+	<h1>TEST 02</h1>
 </template>
 
 <style scoped></style>
