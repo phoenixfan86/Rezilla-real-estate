@@ -19,7 +19,7 @@ import TheWelcome from './components/TheWelcome.vue'
 	</header>
 
 	<main>
-		<h1>test03</h1>
+		<h1>test04</h1>
 		<TheWelcome />
 	</main>
 </template>
