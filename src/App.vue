@@ -1,7 +1,14 @@
-<script></script>
+<script>
+import Header from './components/Header.vue'
+export default {
+	components: { Header },
+}
+</script>
 
 <template>
-	<h1>TEST 02</h1>
+	<div>
+		<Header />
+	</div>
 </template>
 
 <style scoped></style>
