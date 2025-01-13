@@ -7,7 +7,7 @@ export default {
   <nav>
     <div class="top__menu">
       <ul class="top__menu__wrapper">
-        <li><a href="#" class="menu__item">Home</a></li>
+        <li><a href="#" class="menu__item">Homeus</a></li>
         <li><a href="#" class="menu__item">About-me</a></li>
         <li><a href="#" class="menu__item">Listings</a></li>
         <li><a href="#" class="menu__item">Services</a></li>
