@@ -1,8 +1,9 @@
 <script>
-import Button from "./components/Button.vue";
-import Sitelogo from "./components/Sitelogo.vue";
+import Button from "./Button.vue";
+import Sitelogo from "./Sitelogo.vue";
+
 export default {
-  components: { Button, Sitelogo },
+  components: { Button, Sitelogo }
 }
 </script>
 <template>
@@ -17,7 +18,7 @@ export default {
       </ul>
     </div>
     <div class="logo">
-    <Sitelogo />
+      <Sitelogo />
     </div>
     <div class="user__block">
       <div class="user__img"><a href=""><img src="/src/assets/img/ico/user_ico.png"
@@ -43,6 +44,10 @@ nav {
 }
 
 .menu__item {
-  padding: 13px 16px;
+  width: 100%;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

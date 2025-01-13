@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'Button',
   props: {
     label: {
       type: String,
@@ -17,7 +18,6 @@ export default {
 <style>
 .button {
   width: 100%;
-  height: 100%;
   padding: 13px 16px;
   border-radius: 30px;
 }
