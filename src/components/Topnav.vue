@@ -8,7 +8,7 @@ export default {
     <div class="top__menu">
       <ul class="top__menu__wrapper">
         <li><a href="#" class="menu__item">Home</a></li>
-        <li><a href="#" class="menu__item">About</a></li>
+        <li><a href="#" class="menu__item">About us</a></li>
         <li><a href="#" class="menu__item">Listings</a></li>
         <li><a href="#" class="menu__item">Services</a></li>
         <li><a href="#" class="menu__item">Blog</a></li>
