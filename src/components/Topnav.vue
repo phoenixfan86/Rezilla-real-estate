@@ -40,5 +40,12 @@ nav {
   padding: 21px 100px;
 }
 
-.top__menu__wrapper {}
+.top__menu__wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.menu__item {
+  padding: 13px 16px;
+}
 </style>
