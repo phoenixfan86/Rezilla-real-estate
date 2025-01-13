@@ -1,6 +1,6 @@
 <script>
-import Button from "./Button.vue";
-import Sitelogo from "./Sitelogo.vue";
+import Button from "./components/Button.vue";
+import Sitelogo from "./components/Sitelogo.vue";
 export default {
   components: { Button, Sitelogo },
 }
@@ -17,12 +17,7 @@ export default {
       </ul>
     </div>
     <div class="logo">
-      <div class="logo__img">
-        <a href="#">
-          <img src="/src/assets/img/ico/house_ico.png" alt="">
-          <h4>Rezilla</h4>
-        </a>
-      </div>
+    <Sitelogo />
     </div>
     <div class="user__block">
       <div class="user__img"><a href=""><img src="/src/assets/img/ico/user_ico.png"
