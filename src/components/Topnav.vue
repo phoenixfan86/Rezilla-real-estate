@@ -1,17 +1,19 @@
 <script>
+import Button from "./Button.vue";
+import Sitelogo from "./Sitelogo.vue";
 export default {
-
+  components: { Button, Sitelogo },
 }
 </script>
 <template>
   <nav>
     <div class="top__menu">
       <ul class="top__menu__wrapper">
-        <li><a href="#" class="menu__item">Homeus</a></li>
-        <li><a href="#" class="menu__item">About-me</a></li>
-        <li><a href="#" class="menu__item">Listings</a></li>
-        <li><a href="#" class="menu__item">Services</a></li>
-        <li><a href="#" class="menu__item">Blog</a></li>
+        <li><a href="#" class="menu__item"><Button class="button" label="Home" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="button" label="About" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="button" label="Listings" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="button" label="Services" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="button" label="Blog" /></a></li>
       </ul>
     </div>
     <div class="logo">

@@ -2,6 +2,7 @@
 
 :root {
 	--primary-colour: #3a0ca3;
+	----button-hover: rgba(67, 97, 238, 0.3);
 }
 
 * {
