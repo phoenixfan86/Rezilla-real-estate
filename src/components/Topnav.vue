@@ -1,17 +1,18 @@
 <script>
+import Button from "./Button.vue";
 export default {
-
+  components: { Button }
 }
 </script>
 <template>
   <nav>
     <div class="top__menu">
       <ul class="top__menu__wrapper">
-        <li><a href="#" class="menu__item">Home</a></li>
-        <li><a href="#" class="menu__item">About</a></li>
-        <li><a href="#" class="menu__item">Listings</a></li>
-        <li><a href="#" class="menu__item">Services</a></li>
-        <li><a href="#" class="menu__item">Blog</a></li>
+        <li><a href="#" class="menu__item"><Button class="_text_2" label="Home" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="_text_2" label="About" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="_text_2" label="Listings" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="_text_2" label="Services" /></a></li>
+        <li><a href="#" class="menu__item"><Button class="_text_2" label="Blog" /></a></li>
       </ul>
     </div>
     <div class="logo">
@@ -43,9 +44,5 @@ nav {
 .top__menu__wrapper {
   width: 100%;
   display: flex;
-}
-
-.menu__item {
-  padding: 13px 16px;
 }
 </style>

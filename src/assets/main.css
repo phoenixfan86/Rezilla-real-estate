@@ -2,6 +2,8 @@
 
 :root {
 	--primary-colour: #3a0ca3;
+	--text-2:#2B2B2B;
+	--button-hover: rgba(67, 97, 238, 0.3);
 }
 
 * {
@@ -26,6 +28,8 @@ body {
 	color: #fff;
 }
 
-._small{
-	font-size: 13px;
+._text_2{
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--text-2);
 }
