@@ -3,7 +3,7 @@ export default {}
 </script>
 
 <template>
-	<header>
+	<div class="header">
 		<div class="contact__item">
 			<div class="img">
 				<img src="/src/assets/img/ico/loc_ico.png" alt="" />
@@ -21,22 +21,21 @@ export default {}
 				<div class="img">
 					<img src="/src/assets/img/ico/mail_ico.png" alt="" />
 				</div>
-				<a href="mailto:support@rezilla.com" class="_white"
-					>support@rezilla.com</a
-				>
+				<a href="mailto:support@rezilla.com" class="_white">support@rezilla.com</a>
 			</div>
 		</div>
-	</header>
+	</div>
 </template>
 
 <style scoped>
-header {
+.header {
 	width: 100%;
-	max-width: 1440px;
 	height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-size: 13px;
+	padding: 12px 100px;
 	background-color: var(--primary-colour);
 }
 
