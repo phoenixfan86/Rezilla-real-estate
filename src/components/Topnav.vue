@@ -17,7 +17,7 @@ export default {
     <div class="logo">
       <div class="logo__img">
         <a href="#">
-          <img src="./src/assets/img/ico/house_ico.png" alt="">
+          <img src="/src/assets/img/ico/house_ico.png" alt="">
           <h4>Rezilla</h4>
         </a>
       </div>
