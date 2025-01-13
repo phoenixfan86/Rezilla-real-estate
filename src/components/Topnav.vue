@@ -1,7 +1,9 @@
 <script>
 import Button from "./Button.vue";
+import Logo from "./Sitelogo.vue";
+
 export default {
-  components: { Button }
+  components: { Button, Logo }
 }
 </script>
 <template>
@@ -15,19 +17,11 @@ export default {
         <li><a href="#" class="menu__item"><Button class="_text_2" label="Blog" /></a></li>
       </ul>
     </div>
-    <div class="logo">
-      <div class="logo__img">
-        <a href="#">
-          <img src="/src/assets/img/ico/house_ico.png" alt="">
-          <h4>Rezilla</h4>
-        </a>
-      </div>
-    </div>
+    <Logo />
     <div class="user__block">
       <div class="user__img"><a href=""><img src="/src/assets/img/ico/user_ico.png"
             alt=""><span>Login/Register</span></a></div>
     </div>
-
   </nav>
 </template>
 
