@@ -1,9 +1,11 @@
 <script>
-import Button from "./Button.vue";
+import Button from "./Buttons/Button.vue";
+import Buttonlarge from "./Buttons/Buttonlarge.vue";
 import Sitelogo from "./Sitelogo.vue";
+import Userlogin from "./Userlogin.vue";
 
 export default {
-  components: { Button, Sitelogo }
+  components: { Button, Sitelogo, Userlogin }
 }
 </script>
 <template>
@@ -20,11 +22,8 @@ export default {
     <div class="logo">
       <Sitelogo />
     </div>
-    <div class="user__block">
-      <div class="user__img"><a href=""><img src="/src/assets/img/ico/user_ico.png"
-            alt=""><span>Login/Register</span></a></div>
-    </div>
-
+    <Userlogin />
+    <>
   </nav>
 </template>
 
