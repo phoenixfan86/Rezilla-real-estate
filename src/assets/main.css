@@ -3,7 +3,9 @@
 :root {
 	--primary-colour: #3a0ca3;
 	--button-hover: rgba(67, 97, 238, 0.3);
+	--text-1:#808080;
 	--text-2: #2B2B2B;
+	--label:#4361EE;
 }
 
 * {
@@ -26,6 +28,23 @@ body {
 
 ._white {
 	color: #fff;
+}
+
+._label{
+font-size: 19px;
+font-weight: medium;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+color:var(--label)
+}
+
+h1{
+	font-size: 58px;
+}
+
+._text_1{
+	font-size: 16px;
+	color: var(--text-1);
 }
 
 ._text_2{
