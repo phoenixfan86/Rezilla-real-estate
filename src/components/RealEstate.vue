@@ -6,9 +6,9 @@ export default {
   data() {
     return {
       imageList: [
-        "public/img/gallery/1.png",
-        "public/img/gallery/2.png",
-        "public/img/gallery/3.png"
+        "./img/gallery/1.png",
+        "./img/gallery/2.png",
+        "./img/gallery/3.png"
       ],
     }
   }
