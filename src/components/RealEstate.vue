@@ -7,8 +7,8 @@ export default {
     return {
       imageList: [
         require("@/assets/img/gallery/1.png"),
-        "/src/assets/img/gallery/2.png",
-        "/src/assets/img/gallery/3.png"
+        require("@/assets/img/gallery/2.png"),
+        require("@/assets/img/gallery/3.png")
       ],
     }
   }
