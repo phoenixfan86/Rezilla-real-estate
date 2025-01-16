@@ -1,6 +1,23 @@
 <script>
 export default {
-
+  data() {
+    return {
+      selectedProperty: null,
+      selectedRoom: null,
+      propertyTypes: [
+        { value: 'house', text: 'House' },
+        { value: 'apartment', text: 'Apartment' },
+        { value: 'cottage', text: 'Cottage' }
+      ],
+      roomsQuantity: [
+        { value: '1', text: 'One room' },
+        { value: '2', text: 'Two rooms' },
+        { value: '3', text: 'Three rooms' },
+        { value: '4', text: 'Four rooms' },
+        { value: '5', text: 'Five rooms' }
+      ]
+    }
+  }
 }
 </script>
 <template>
@@ -8,22 +25,21 @@ export default {
     <div class="realestate__switch "><span class="switch__item">For Sale</span><span class="switch__item">For
         Rent</span></div>
     <div class="search__item">
-      <label for="city">New York, San Francisco, etc</label>
-      <input type="text" placeholder="" id="city">
+      <label for="city">Select City</label>
+      <input type="text" placeholder="" id="city" class="_item">
     </div>
     <div class="search__item">
       <label for="">Select Property Type</label>
-      <select v-model="selected" class="property" id="property">
-        <option value="a">A</option>
-        <option value="b">B</option>
-        <option value="c">C</option>
+      <select v-model="selectedProperty" class="property _item">
+        <option v-for="property in propertyTypes" :key="property.value" :value="property.value"> {{ property.text }}
+        </option>
       </select>
     </div>
     <div class="search__item">
-      <select v-model="selected" class="property" id="property__rooms">
-        <option value="a">1</option>
-        <option value="b">2</option>
-        <option value="c">3</option>
+      <label for="">Select Rooms</label>
+      <select v-model="selectedRoom" class="property _item">
+        <option v-for="quantity in roomsQuantity" :key="quantity.value" :value="quantity.value"> {{ quantity.text }}
+        </option>
       </select>
     </div>
   </div>
@@ -34,7 +50,7 @@ export default {
 <style>
 .realestate__search {
   width: 420px;
-  height: 100px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -62,6 +78,23 @@ export default {
 
 .switch__item:hover {
   border-bottom: 2px solid var(--primary-colour);
-  transition: all .6s ease-in-out;
+  color: var(--primary-colour);
+  font-weight: medium;
+  transition: all .4s ease-in-out;
+}
+
+.search__item {
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+._item {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  padding: 15px 10px 2px 10px;
+  font-size: 18px;
+  color: var(--text-1);
+  outline: none;
 }
 </style>
