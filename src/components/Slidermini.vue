@@ -65,6 +65,17 @@ export default {
   border-radius: 20px;
 }
 
+.slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(-120deg, rgba(67, 97, 238, 1), rgba(67, 97, 238, 0));
+}
+
 .slider__container {
   display: flex;
   transition: transform 0.5s ease;
@@ -80,7 +91,7 @@ export default {
 
 .slider__item img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .slider__btn {
@@ -97,11 +108,11 @@ export default {
 }
 
 .slider__btn--prev {
-  left: 0;
+  left: 5px;
 }
 
 .slider__btn--next {
-  right: 0;
+  right: 5px;
 }
 
 .slider__indicators {
