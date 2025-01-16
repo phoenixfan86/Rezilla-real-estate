@@ -6,9 +6,9 @@ export default {
   data() {
     return {
       imageList: [
-        require("@/src/assets/img/gallery/1.png"),
-        require("@/src/assets/img/gallery/2.png"),
-        require("@/src/assets/img/gallery/3.png")
+        "/img/gallery/1.png",
+        "/img/gallery/2.png",
+        "/img/gallery/3.png"
       ],
     }
   }
