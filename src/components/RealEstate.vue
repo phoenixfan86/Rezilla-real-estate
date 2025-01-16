@@ -1,7 +1,17 @@
 <script>
+import Slidermini from "./Slidermini.vue";
 import Search from "./Search.vue";
 export default {
-  components: { Search }
+  components: { Search, Slidermini },
+  data() {
+    return {
+      imageList: [
+        "./src/assets/img/gallery/1.png",
+        "./src/assets/img/gallery/2.png",
+        "./src/assets/img/gallery/3.png"
+      ],
+    }
+  }
 }
 </script>
 <template>
@@ -13,13 +23,13 @@ export default {
         sodales vulputate ac
         in
         purus.</p>
-      <div class="gallery__preview"></div>
+      <div class="gallery__preview">
+        <Slidermini :images="imageList" />
+      </div>
     </div>
     <Search />
   </div>
 </template>
-
-
 
 <style>
 .block__wrapper {
