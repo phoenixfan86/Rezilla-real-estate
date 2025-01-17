@@ -1,8 +1,9 @@
 <script>
 import Slidermini from "./Slidermini.vue";
 import Search from "./Search.vue";
+import ListingsNewTab from "./ListingsNewTab.vue";
 export default {
-  components: { Search, Slidermini },
+  components: { Search, Slidermini, ListingsNewTab },
   data() {
     return {
       imageList: [
@@ -28,6 +29,12 @@ export default {
       </div>
     </div>
     <Search />
+    <ListingsNewTab label="200+ New 
+Listings Everyday!">
+      <template #icon>
+        <img src="/public/img/gallery/house2.png" alt="icon" />
+      </template>
+    </ListingsNewTab>
   </div>
 </template>
 
@@ -35,7 +42,7 @@ export default {
 .block__wrapper {
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 950px;
   display: flex;
   align-items: center;
   justify-self: start;
@@ -51,10 +58,10 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   content: '';
-  width: 100%;
-  height: 1200px;
+  width: 105%;
+  height: 1400px;
   border-radius: 50%;
-  background: linear-gradient(0deg, rgba(67, 97, 238, .5), rgba(76, 201, 240, 0));
+  background: linear-gradient(0deg, rgba(67, 97, 238, .3), rgba(76, 201, 240, 0));
   z-index: -1;
 }
 
@@ -65,5 +72,9 @@ export default {
   align-items: start;
   justify-content: center;
   gap: 15px;
+}
+
+.gallery__preview {
+  padding: 10px;
 }
 </style>

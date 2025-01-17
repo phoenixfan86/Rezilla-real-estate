@@ -63,6 +63,7 @@ export default {
   height: 350px;
   overflow: hidden;
   border-radius: 20px;
+
 }
 
 .slider::before {

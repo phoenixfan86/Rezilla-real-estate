@@ -75,6 +75,7 @@ export default {
   padding: 50px 40px;
   border-radius: 30px;
   background-color: #fff;
+  filter: drop-shadow(0 0 50px var(--text-1));
 }
 
 .realestate__switch {
