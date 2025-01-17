@@ -19,10 +19,6 @@ export default {
 
 <style scoped>
 .listings__tab {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 320px;
   height: 100px;
   display: flex;
@@ -33,7 +29,7 @@ export default {
   border-radius: 50px;
   background-color: #fff;
   filter: drop-shadow(0 0 10px var(--text-1));
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 20px;
 }

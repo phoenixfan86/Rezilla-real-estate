@@ -2,9 +2,10 @@
 import Header from "./components/Header.vue";
 import Topnav from "./components/Topnav.vue";
 import RealEstate from "./components/RealEstate.vue";
+import Brands from "./components/Brands.vue";
 
 export default {
-	components: { Header, Topnav, RealEstate },
+	components: { Header, Topnav, RealEstate, Brands },
 }
 </script>
 
@@ -13,6 +14,7 @@ export default {
 		<Header />
 		<Topnav />
 		<RealEstate />
+		<Brands />
 	</div>
 </template>
 

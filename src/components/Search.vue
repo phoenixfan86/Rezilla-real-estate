@@ -48,8 +48,10 @@ export default {
     <div class="search__block">
       <div class="search__wrapper">
         <div class="advanced__search">
-          <img src="/src/assets/img/ico/setting_ico.png" alt="">
-          <span class="_smallp">Advance Search</span>
+          <a href="">
+            <img src="/src/assets/img/ico/setting_ico.png" alt="">
+            <span class="_smallp">Advance Search</span>
+          </a>
         </div>
         <Buttonlarge label="Search">
           <template #icon>
@@ -60,8 +62,6 @@ export default {
     </div>
   </div>
 </template>
-
-
 
 <style scoped>
 .realestate__search {
@@ -115,16 +115,20 @@ export default {
   outline: none;
 }
 
+.search__block {
+  width: 100%;
+}
+
 .search__wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 40px;
 }
 
-.advanced__search {
+.advanced__search a {
   width: 135px;
   display: flex;
   align-items: center;

@@ -17,18 +17,20 @@ export default {
 </script>
 <template>
   <div class="block__wrapper">
-    <div class="description__block">
-      <span class="_label">real estate</span>
-      <h1>Find a perfect home you love..!</h1>
-      <p class="_text_1">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien
-        sodales vulputate ac
-        in
-        purus.</p>
-      <div class="gallery__preview">
-        <Slidermini :images="imageList" />
+    <div class="content__wrapper">
+      <div class="description__block">
+        <span class="_label">real estate</span>
+        <h1>Find a perfect home you love..!</h1>
+        <p class="_text_1">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien
+          sodales vulputate ac
+          in
+          purus.</p>
+        <div class="gallery__preview">
+          <Slidermini :images="imageList" />
+        </div>
       </div>
+      <Search />
     </div>
-    <Search />
     <ListingsNewTab label="200+ New 
 Listings Everyday!">
       <template #icon>
@@ -40,26 +42,36 @@ Listings Everyday!">
 
 <style scoped>
 .block__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__wrapper {
   position: relative;
   width: 100%;
-  height: 950px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-self: start;
   gap: 80px;
   padding: 40px 100px;
-  overflow: hidden;
+  margin-bottom: 20px;
+
   z-index: 1;
 }
 
 .block__wrapper::before {
   position: absolute;
-  top: -50%;
+  top: -30%;
   left: 50%;
   transform: translateX(-50%);
   content: '';
   width: 105%;
-  height: 1400px;
+  height: 1150px;
   border-radius: 50%;
   background: linear-gradient(0deg, rgba(67, 97, 238, .3), rgba(76, 201, 240, 0));
   z-index: -1;
