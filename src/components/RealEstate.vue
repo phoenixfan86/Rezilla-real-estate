@@ -31,13 +31,31 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .block__wrapper {
+  position: relative;
   width: 100%;
+  height: 900px;
   display: flex;
   align-items: center;
   justify-self: start;
-  padding: 89px 140px;
+  gap: 80px;
+  padding: 40px 100px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.block__wrapper::before {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 100%;
+  height: 1200px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(67, 97, 238, .5), rgba(76, 201, 240, 0));
+  z-index: -1;
 }
 
 .description__block {

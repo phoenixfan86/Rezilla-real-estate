@@ -1,5 +1,8 @@
 <script>
+import Buttonlarge from "./Buttons/Buttonlarge.vue";
+
 export default {
+  components: { Buttonlarge },
   data() {
     return {
       selectedProperty: null,
@@ -42,12 +45,25 @@ export default {
         </option>
       </select>
     </div>
+    <div class="search__block">
+      <div class="search__wrapper">
+        <div class="advanced__search">
+          <img src="/src/assets/img/ico/setting_ico.png" alt="">
+          <span class="_smallp">Advance Search</span>
+        </div>
+        <Buttonlarge label="Search">
+          <template #icon>
+            <img src="/src/assets/img/ico/search_ico.png" alt="icon" />
+          </template>
+        </Buttonlarge>
+      </div>
+    </div>
   </div>
 </template>
 
 
 
-<style>
+<style scoped>
 .realestate__search {
   width: 420px;
   height: auto;
@@ -55,8 +71,8 @@ export default {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  gap: 30px;
-  padding: 60px 40px;
+  gap: 20px;
+  padding: 50px 40px;
   border-radius: 30px;
   background-color: #fff;
 }
@@ -96,5 +112,23 @@ export default {
   font-size: 18px;
   color: var(--text-1);
   outline: none;
+}
+
+.search__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 60px;
+}
+
+.advanced__search {
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--primary-colour);
 }
 </style>
