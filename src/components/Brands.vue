@@ -3,12 +3,12 @@ export default {
   data() {
     return {
       imagesList: [
-        './public/img/Brands/image-1.png',
-        './public/img/Brands/image-2.png',
-        './public/img/Brands/image-3.png',
-        './public/img/Brands/image-4.png',
-        './public/img/Brands/image-5.png',
-        './public/img/Brands/image-6.png'
+        './img/Brands/image-1.png',
+        './img/Brands/image-2.png',
+        './img/Brands/image-3.png',
+        './img/Brands/image-4.png',
+        './img/Brands/image-5.png',
+        './img/Brands/image-6.png'
       ]
     }
 
