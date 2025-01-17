@@ -11,7 +11,6 @@ export default {
         './img/Brands/image-6.png'
       ]
     }
-
   }
 
 }
