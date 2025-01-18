@@ -25,7 +25,7 @@ export default {
     <Userlogin />
     <Buttonlarge label="Add Listing">
       <template #icon>
-        <img src="./img/ico/house_ico.png" alt="icon" />
+        <img src="/img/ico/house_ico.png" alt="icon" />
       </template>
     </Buttonlarge>
   </nav>

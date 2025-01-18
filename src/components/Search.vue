@@ -49,13 +49,13 @@ export default {
       <div class="search__wrapper">
         <div class="advanced__search">
           <a href="">
-            <img src="./img/ico/setting_ico.png" alt="">
+            <img src="/img/ico/setting_ico.png" alt="">
             <span class="_smallp">Advance Search</span>
           </a>
         </div>
         <Buttonlarge label="Search">
           <template #icon>
-            <img src="./img/ico/search_ico.png" alt="icon" />
+            <img src="/img/ico/search_ico.png" alt="icon" />
           </template>
         </Buttonlarge>
       </div>

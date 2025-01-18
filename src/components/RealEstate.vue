@@ -89,4 +89,10 @@ Listings Everyday!">
 .gallery__preview {
   padding: 10px;
 }
+
+@media(max-width:430px) {
+  .content__wrapper {
+    flex-direction: column;
+  }
+}
 </style>
