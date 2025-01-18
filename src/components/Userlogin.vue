@@ -8,7 +8,7 @@ export default {
   <div class="user__login">
     <div class="user__login__wrapper">
       <a href="" class="login__block _text_2">
-        <div class="login__img"><img src="/src/assets/img/ico/user_ico.png" alt=""></div>
+        <div class="login__img"><img src="./img/ico/user_ico.png" alt=""></div>
         Login/Register
       </a>
     </div>
