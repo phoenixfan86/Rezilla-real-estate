@@ -26,9 +26,19 @@ export default {
       </div>
     </div>
     <div class="img_wrapper">
-      <img src="/public/img/gallery/3.png" alt="">
-      <div class="img__item"><img src="" alt=""><img src="" alt=""></div>
+      <img src="/img/gallery/3.png" alt="">
+      <div class="img__item">
+        <img src="/public/img/gallery/2.png" alt="">
+        <img src="/public/img/gallery/4.png" alt="">
+      </div>
     </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.block__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
