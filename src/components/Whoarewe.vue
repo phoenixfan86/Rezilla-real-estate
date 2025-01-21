@@ -75,7 +75,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .img__item {
@@ -89,6 +89,7 @@ export default {
 }
 
 .img__item_1 {
+  position: relative;
   width: 280px;
   height: 550px;
 }
@@ -96,5 +97,16 @@ export default {
 .img__item_1:nth-child(1) {
   width: 277px;
   height: 280px;
+}
+
+.img__item_1:nth-child(2):after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 30%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(-120deg, rgba(67, 97, 238, 1), rgba(67, 97, 238, 0));
 }
 </style>
